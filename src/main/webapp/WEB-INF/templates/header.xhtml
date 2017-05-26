@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ace="http://www.icefaces.org/icefaces/components"
+	xmlns:icecore="http://www.icefaces.org/icefaces/core"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+
+		<h:form id="formMenu">
+			<ace:menuBar id="menu" autoSubmenuDisplay="true">
+				<ace:menuItem value="Home" actionListener="#{mainBean.menuAction}" target="_blank"/>
+			   	<ace:menuItem value="pp 1" actionListener="#{page1Bean.menuAction}" target="_blank"/>
+			   	<ace:menuItem value="pp 2" actionListener="#{page2Bean.menuAction}" target="_blank"/>
+			</ace:menuBar>
+		</h:form>		
+
+</html>
