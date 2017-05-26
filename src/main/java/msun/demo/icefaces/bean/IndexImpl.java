@@ -1,10 +1,12 @@
 package msun.demo.icefaces.bean;
 
+import org.springframework.stereotype.Service;
 
 /**
  * index implementor
  *
  */
+@Service
 public class IndexImpl implements Index{
 	private String msg; 
 	

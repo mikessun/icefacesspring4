@@ -7,6 +7,8 @@ import javax.faces.bean.ManagedBean;
 import javax.faces.context.FacesContext;
 import javax.faces.event.ActionEvent;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 import msun.demo.icefaces.bean.Index;
 import msun.demo.icefaces.bean.IndexImpl;
 
@@ -20,8 +22,10 @@ public class MainBean {
 	
 	public final String msg = "main page";
 	
+	@Autowired
+	Index index;
+	
 	public String printMensagem() {
-		Index index = new IndexImpl();
 		index.setMessage(msg);
 		return index.getMessage();
 	}
